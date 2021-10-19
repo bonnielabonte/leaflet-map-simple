@@ -27,8 +27,8 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [41.77, -72.69], // EDIT coordinates to re-center map
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    center: [41.85, -72.6], // EDIT coordinates to re-center map
+    zoom: 13,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false,
     tap: false
   });
@@ -43,8 +43,9 @@
 
   /* Display a point marker with pop-up text */
   L.marker([41.77, -72.69]).addTo(map); // EDIT marker coordinates
+  .bindPopup("CT Capitol") // EDIT pop-up text message
   L.marker ([41.85, -72.6]).addTo(map);
-  .bindPopup("Insert pop-up text here"); // EDIT pop-up text message
+    .bindPopup ("random point"
 
   </script>
 </body>
